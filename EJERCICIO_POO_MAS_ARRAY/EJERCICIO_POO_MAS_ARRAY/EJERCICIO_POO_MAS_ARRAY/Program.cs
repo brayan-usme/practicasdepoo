@@ -40,9 +40,7 @@
     private static void Mostrarventas()
     {
 
-
-
-
+    }
 
 
 
