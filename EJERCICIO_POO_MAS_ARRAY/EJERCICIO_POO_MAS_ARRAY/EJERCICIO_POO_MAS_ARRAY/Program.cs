@@ -2,21 +2,22 @@
 {
     private static void Main(string[] args)
     {
-        string[] MESESAÑO = new string[] { "enero", "febrero", "marzo", "abril", "marzo", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "novienbre", "diciembre" };
+        string[] MESESAÑO = new string[] { "enero", "febrero", "marzo", "abril",  "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "novienbre", "diciembre" };
 
         decimal[] sales = new decimal[12];
 
-        decimal suma = 0;
+        decimal suma =0 ;
 
 
         // metodo almacenar ventas
-        Almacenarventas();
+        Almacenarventas(sales,MESESAÑO);
 
 
         //METODO CALCULAR VENTAS DEL AÑO
-        Calcularventas();
+        suma = Calcularventas(sales, suma);
+
         //METODO PARA MOSTRAR VENTAS
-        Mostrarventas();
+        Mostrarventas(sales,suma, MESESAÑO);
 
 
 
@@ -25,22 +26,46 @@
 
 
 
-    private static void Almacenarventas()
+    private static void Almacenarventas(decimal[] Sales, string[] MESESAÑO)
     {
+        for (int i = 0; i < Sales.Length; i++) 
+        {
+        Console.WriteLine($" ingrese las ventas del mes {MESESAÑO[i]}");
+            Sales[i] = Convert.ToDecimal(Console.ReadLine()); 
 
+        }
 
     }
 
-    private static void Calcularventas()
+    private static decimal Calcularventas(decimal[] Sales,decimal suma)
     {
+        for (int i = 0; i < Sales.Length; i++) 
+        {
+         suma = suma + Sales[i]; // otra opcion seria suma+=sales[i];
+        
+        }
+       return suma;
+    }
+
+    private static void Mostrarventas(decimal[] Sales, decimal suma, string[]MESESAÑO)
+    { 
+    
+    
+    for(int i = 0; i < Sales.Length; i++)
+        {
+            Console.WriteLine($" {MESESAÑO[i]}:{Sales[i]:C2}");
+        
+        }
+
+        Console.WriteLine($" EN TODO EL AÑO SE VENDIO : {suma:C2}");
 
 
     }
 
-    private static void Mostrarventas()
-    {
+        
+        
 
-    }
+       
 
 
 
