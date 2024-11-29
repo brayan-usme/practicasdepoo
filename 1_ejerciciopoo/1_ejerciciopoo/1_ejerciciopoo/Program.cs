@@ -94,6 +94,19 @@ internal class Program
             // FORMA ABREVIADA
             int[] myArrayyY = { 1, 2, 3, 4, 5, 6, 7 };
 
+            // OTRA FORMA DE DARLE VALORES A OS ESPACIOS DEL ARRAYS ES
+
+            int[] myArrayYYY = new int[5];
+            myArrayYYY[0] = 1;
+            myArrayYYY[1] = 2;
+            myArrayYYY[2] = 43;
+            myArrayYYY[3] = 444;
+            myArrayYYY[4] = 44;
+
+
+
+
+
 
 
 
