@@ -86,7 +86,7 @@ internal class Program
 
             // EN ESTA FORMA NO HAY NECESIDAD DE PONER EN EL CORCHETE CUANTAS POSICIONES TIENE EL ARRAY EL PROGRAMA LO DEFINE AUNTOMATICAMENTE
 
-            int[] myArrayy = new int[] {1,2,3,4,5,6,7}; // LOS NUMEROS QUE PONEMOS EN LAS LLAVES SON LOS DATOS QUE SE VAN A ALMACENAR EN LOS ESPACIOS DEL ARRAY
+            int[] myArrayy = new int[] { 1, 2, 3, 4, 5, 6, 7 }; // LOS NUMEROS QUE PONEMOS EN LAS LLAVES SON LOS DATOS QUE SE VAN A ALMACENAR EN LOS ESPACIOS DEL ARRAY
 
 
 
@@ -104,12 +104,15 @@ internal class Program
             myArrayYYY[4] = 44;
 
 
+            // EJEMPLO DEL VIDEO DEL PROFE 
 
+            string[] MESESAÑO = new string[] { "enero", "febrero", "marzo", "abril", "marzo", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "novienbre", "diciembre" };
 
+            decimal[] sales = new decimal[12];
 
+            decimal suma = 0;
 
-
-
+            // crear unos metodos para utilizar la poo
 
 
 
@@ -121,7 +124,14 @@ internal class Program
 
 
 
+        // metodo almacenar ventas
+        Almacenarventas();
 
+
+        //METODO CALCULAR VENTAS DEL AÑO
+        Calcularventas();
+        //METODO PARA MOSTRAR VENTAS
+        Mostrarventas();
 
 
 
@@ -139,4 +149,25 @@ internal class Program
 
 
     }
+
+    private static void Almacenarventas()
+    {
+
+
+    }
+
+    private static void Calcularventas() 
+    {
+    
+    
+    }
+
+    private static void Mostrarventas()
+    {
+
+
+    }
+
+
+
 }

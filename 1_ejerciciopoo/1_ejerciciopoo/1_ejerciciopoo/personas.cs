@@ -18,7 +18,7 @@ namespace _1_ejerciciopoo
         // METODOS DE MI CLASE PERSONA 
 
         public void Presentar() // FORMA DE CREAR UN METODO EN C# :
-                                // = MODIFICADOR DE ACCESO + TIPO DE DATO QUE RETORNA + NOMBRE DEL METODO + SECCION DE PARAMETROS + CORCHETES FINALES
+                                // = MODIFICADOR DE ACCESO + TIPO DE DATO QUE RETORNA + NOMBRE DEL METODO + SECCION DE PARAMETROS + LLAVES FINALES
         {
             Console.WriteLine($" Hola, mí nombre es {Nombre} \n tengo {Edad} \n");
 
